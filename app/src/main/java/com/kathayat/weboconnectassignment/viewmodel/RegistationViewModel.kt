@@ -20,10 +20,10 @@ class RegistationViewModel(private val mainRepository: MainRepository) : ViewMod
         viewModelScope.launch {
             _userResponse.postValue(NetworkResource.Loading())
             val response = mainRepository.registerUser(first, last, phone, address)
-            _userResponse.postValue(handleCoinResponse(response))
+            _userResponse.postValue(handleRegistertionResponse(response))
         }
 
-    private fun handleCoinResponse(response: Response<UserDetails>): NetworkResource<UserDetails> {
+    private fun handleRegistertionResponse(response: Response<UserDetails>): NetworkResource<UserDetails> {
         if (response.isSuccessful) {
             response.body()?.let {
                 return NetworkResource.Success(it)
