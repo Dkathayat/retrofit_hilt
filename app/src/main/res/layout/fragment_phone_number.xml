@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #F5F5F5"
+    tools:context=".signup.fragments.PhoneNumberFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backArrowPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_marginTop="50dp"
+                android:text="Enter your mobile number"
+                android:textColor="#020202"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backArrowPhoneNumber" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="Hello, Welcome Back to Our Account"
+                android:textColor="#696767"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="492.41dp"
+                android:layout_marginTop="300dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_shapes_view_signup"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/enterPhoneNumberET"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view">
+
+                <ImageView
+                    android:id="@+id/indianFlagPhone"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/indian_flag_icon" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/indianFlagPhone"
+                    android:gravity="center"
+                    android:text="+91" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/enterPhoneNumberET"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_shapes_view_signup"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_vertical"
+                android:hint="0000 00000"
+                android:inputType="number"
+                android:maxEms="10"
+                android:maxLength="10"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="15dp"
+                android:textColor="#020202"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+                app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/requestOtpButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/button_splash_shapes"
+                android:text="Request OTP"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enterPhoneNumberET" />
+
+
+            <LinearLayout
+                android:id="@+id/dividerLinerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestOtpButton">
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/view4"
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_toLeftOf="@+id/textView9"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login With"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/view2"
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_toRightOf="@+id/textView9"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/signUpGoogle"
+                android:layout_width="158.4dp"
+                android:layout_height="56.87dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_shapes_view_signup"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerLinerLayout">
+
+
+                <ImageView
+                    android:id="@+id/googleImageView"
+                    android:layout_width="25.84dp"
+                    android:layout_height="26.66dp"
+                    android:src="@drawable/google_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/googleImageView"
+                    android:gravity="center_horizontal"
+                    android:text="Google"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/singUpFacebook"
+                android:layout_width="158.4dp"
+                android:layout_height="56.87dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/custom_shapes_view_signup"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/signUpGoogle"
+                app:layout_constraintTop_toBottomOf="@+id/dividerLinerLayout">
+
+
+                <ImageView
+                    android:id="@+id/faceBookImageView"
+                    android:layout_width="25.84dp"
+                    android:layout_height="26.66dp"
+                    android:src="@drawable/facebook_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/faceBookImageView"
+                    android:gravity="center_horizontal"
+                    android:text="Facebook"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="35dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="@string/phonedescription"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

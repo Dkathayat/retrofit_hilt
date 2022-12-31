@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">weboconnectassignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splashcontentinfo">O On-Time Departures.Pay just for your seat.No\nRefusal from our end.Spacious &amp; Comfortable Seating.Female passengers safety standards.\nOnboard Refreshments.Cab Trackingthrough\nMaps</string>
+    <string name="phonedescription">By creating passcode you agree with our\n<font color="#FF7F5D">Terms &amp; Conditions</font> and<font color="#FF7F5D"> Privacy Policy</font></string>
+    <string name="resendotp">Don\'t Receive OTP?<font color="#FF7F5D"> Resend</font></string>
+
+</resources>

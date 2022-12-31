@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_navigation"
+    app:startDestination="@id/signUpHomeFragment">
+
+    <fragment
+        android:id="@+id/signUpHomeFragment"
+        android:name="com.kathayat.weboconnectassignment.splash.fragments.SplashHomeFragment"
+        android:label="fragment_sign_up_home"
+        tools:layout="@layout/fragment_sign_up_home" >
+        <action
+            android:id="@+id/action_signUpHomeFragment_to_signUpGetStartedFragment"
+            app:destination="@id/signUpGetStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpGetStartedFragment"
+        android:name="com.kathayat.weboconnectassignment.splash.fragments.SplashGetStartedFragment"
+        android:label="fragment_sign_up_get_started"
+        tools:layout="@layout/fragment_sign_up_get_started" />
+</navigation>
